@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">ไอดีโฮม</string>
+    <string name="qrcode_text_result">IDHOME\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_sell_in_home_fragment">ขาย</string>
+    <string name="gcm_defaultSenderId">462638301482</string>
+
+
+    <string name="tv_location_f">location: %1$s</string>
+    <string name="tv_price1_f">price1: %1$s</string>
+    <string name="tv_price2_f">price2: %1$s</string>
+    <string name="tv_price221_f">price221: %1$s</string>
+    <string name="tv_price222_f">price222: %1$s</string>
+    <string name="tv_disc26_f">disc26: %1$s</string>
+
+
+    <string name="tv_product_code_in_fm_check_product_f"><![CDATA[<b>รหัสสินค้า : </b>%1$s]]></string>
+    <string name="tv_product_name_in_fm_check_product_f"><![CDATA[<b>ชื่อสินค้า : </b>%1$s]]></string>
+    <string name="tv_barcode_f"><![CDATA[<b>บาร์โค้ด : </b>%1$s]]></string>
+    <string name="tv_gi_warehouse_in_item_name_f"><![CDATA[<b>คลังรับ : </b> %1$s]]></string>
+    <string name="tv_gi_warehouse_in_item_location_f"><![CDATA[<b>ตำแหน่ง : </b> %1$s ]]></string>
+    <string name="tv_warehouse_in_item_name_f"><![CDATA[<b>คลังจ่าย : </b> %1$s]]></string>
+    <string name="tv_warehouse_in_item_location_f"><![CDATA[<b>ตำแหน่ง : </b> %1$s ]]></string>
+    <string name="tv_warehouse_in_item_bal_qty_f"><![CDATA[<b>จำนวน : </b> %1$s %2$s]]></string>
+    <string name="tv_warehouse_in_item_price1_f"><![CDATA[<font color="#228B22"><b>ราคาปกติ : </b> %1$s บาท/%2$s </font>]]></string>
+    <string name="tv_warehouse_in_item_price2_f"><![CDATA[<font color="#097969"><b>ราคาสมาชิก : </b> %1$s บาท/%2$s </font>]]></string>
+    <string name="tv_warehouse_in_item_price221_f"><![CDATA[<font color="#C70039"><b>ราคาโปรเดือน : </b> %1$s บาท/%2$s </font>]]></string>
+    <string name="tv_warehouse_in_item_price222_f"><![CDATA[<font color="#900C3F"><b>ราคางานแกรนด์ : </b> %1$s บาท/%2$s </font>]]></string>
+    <string name="tv_gi_warehouse_f"><![CDATA[<b>คลังรับ</b> %1$s <b>ตำแหน่ง</b> %2$s ]]></string>
+    <string name="tv_warehouse_f"><![CDATA[<b>คลังจัดเก็บ</b> %1$s <b>ตำแหน่ง</b> %2$s จำนวน %3$s ]]></string>
+    <string name="tv_product_name_in_item_product_f"><![CDATA[<b>ชื่อสินค้า : </b> %1$s]]></string>
+    <string name="tv_product_price_in_item_product_f"><![CDATA[<font color="#228B22"><b>ราคา : %1$s บาท/%2$s</b></font>]]></string>
+    <string name="tv_product_price_month_in_item_product_f"><![CDATA[<font color="#C70039"><b>ราคาโปร : %1$s บาท/%2$s</b></font>]]></string>
+    <string name="tv_product_price_pro_grand_in_item_product_f"><![CDATA[<font color="#900C3F"><b>ราคางานแกรนด์ : %1$s บาท/%2$s</b></font>]]></string>
+    <string name="tv_product_stock_in_item_product_f"><![CDATA[<b>สต็อก : </b> %1$s %2$s]]></string>
+    <string name="check_the_barcode_and_try_again"><![CDATA[<b>บาร์โค้ด : %1$s</b> <p>ตรวจสอบบาร์โค้ดและลองใหม่อีกครั้ง</p>]]></string>
+    <string name="product_not_found">ไม่พบสินค้า !</string>
+    <string name="text_input_personnel_code">รหัสพนักงาน</string>
+    <string name="text_input_personnel_password">รหัสผ่าน</string>
+    <string name="btn_login">เข้าสู่ระบบ</string>
+    <string name="please_connect_to_wifi_to_use_the_system">โปรดเชื่อมต่อ WiFi องค์กร เพื่อใช้งานระบบ</string>
+    <string name="failed_to_connect">การเชื่อมต่อล้มเหลว</string>
+    <string name="failed_to_connect_message"><![CDATA[<b>โปรดตรวจสอบการเชื่อมต่อ wifi</b><p>wifi ต้องเป็นของบริษัท %1$s เท่านั้น </p>]]></string>
+
+
+    <string name="tv_product_name">ชื่อสินค้า</string>
+    <string name="tv_product_code">รหัสสินค้า</string>
+    <string name="tv_barcode">บาร์โค้ด</string>
+    <string name="tv_product_price">Product price</string>
+    <string name="tv_product_amount">0</string>
+    <string name="tv_product_promotion_price">Promotion price</string>
+    <string name="btn_check_product_in_home_fragment">ตรวจสอบสินค้า</string>
+
+    <string name="btn_transfer">ใบโอนสินค้า</string>
+    <string name="tv_transfer_number_f"><![CDATA[<b>เลขที่ใบโอน</b> %1$s]]></string>
+    <string name="tv_transfer_person_name_f"><![CDATA[<b>ผู้ขอโอน</b> %1$s]]></string>
+    <string name="tv_transfer_datetime_f"><![CDATA[<b>วันที่ขอโอน</b> %1$s]]></string>
+
+
+    <string name="action_mail">Mail</string>
+    <string name="action_delete">delete</string>
+    <string name="action_archieve">archieve</string>
+    <string name="action_search">search</string>
+    <string name="action_scan">Scan</string>
+    <string name="ekyc_splash_screen_loading_progress">กำลังโหลด</string>
+
+    <string name="msg_token_fmt"><![CDATA[msg token fmt : %1$s]]></string>
+
+    <string name="please_enable_notifications">"กรุณาเปิดใช้งานการแจ้งเตือน"</string>
+
+    <string name="tv_transfer_no_f"><![CDATA[<b>หมายเลขใบโอน : </b> %1$s]]></string>
+    <string name="tv_person_name_f"><![CDATA[<b>ผู้ขอโอน : </b> %1$s]]></string>
+    <string name="tv_datetime_f"><![CDATA[<b>วันที่ขอโอน : </b> %1$s]]></string>
+
+
+
+
+</resources>

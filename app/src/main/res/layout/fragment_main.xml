@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_background">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sell"
+            style="@style/ThemeBlue.Button"
+            android:layout_margin="@dimen/space_16dp"
+            android:enabled="true"
+            android:text="@string/btn_sell_in_home_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_check_product"
+            style="@style/ThemeBlue.Button"
+            android:layout_margin="@dimen/space_16dp"
+            android:enabled="true"
+            android:text="@string/btn_check_product_in_home_fragment"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sell"
+            app:layout_constraintStart_toStartOf="@+id/btn_sell"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sell" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_transfer"
+            style="@style/ThemeBlue.Button"
+            android:layout_margin="@dimen/space_16dp"
+            android:enabled="true"
+            android:text="@string/btn_transfer"
+            app:layout_constraintEnd_toEndOf="@+id/btn_check_product"
+            app:layout_constraintStart_toStartOf="@+id/btn_check_product"
+            app:layout_constraintTop_toBottomOf="@+id/btn_check_product" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

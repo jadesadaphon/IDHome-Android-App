@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="@dimen/space_10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/space_150dp"
+            android:layout_height="@dimen/space_150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_idhome" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_semi_bold"
+            android:gravity="center"
+            android:text=" เข้าสู่ระบบ"
+            android:textColor="@color/colorFontBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_size_26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:gravity="center"
+            android:text="เข้าสู่ระบบด้วยรหัสพนักงานของคุณ"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_login_err"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/kanit_regular"
+            android:text="รหัสพนักงาน หรือ รหัสผ่านไม่ถูกต้อง"
+            android:textColor="@color/color_error"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_code"
+            style="@style/BaseGreenTextInputEditText.Input.Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_err">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_focus_green3ca98"
+                android:ellipsize="end"
+                android:fontFamily="@font/kanit_regular"
+                android:hint="@string/text_input_personnel_code"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:lines="1"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="IT06"
+                android:textColorHint="@color/colorGray838383"
+                android:textSize="@dimen/text_size_18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_password"
+            style="@style/BaseGreenTextInputEditText.Input.Style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_64dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/text_input_layout_code"
+            app:layout_constraintStart_toStartOf="@+id/text_input_layout_code"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_layout_code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_focus_green3ca98"
+                android:ellipsize="end"
+                android:fontFamily="@font/kanit_regular"
+                android:hint="@string/text_input_personnel_password"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lines="1"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="66092102"
+                android:textColorHint="@color/colorGray838383"
+                android:textSize="@dimen/text_size_18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/ThemeBlue.Button"
+            android:layout_margin="@dimen/space_16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_input_layout_password" />
+
+        <TextView
+            android:id="@+id/tv_error_network"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/kanit_regular"
+            android:gravity="center"
+            android:text="@string/please_connect_to_wifi_to_use_the_system"
+            android:textColor="@color/color_error"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_login"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/login_loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_error_network">
+
+            <ProgressBar
+                android:id="@+id/ekycSplashScreenLoading"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/AppTheme.ProgressBar.DarkNiceBlue"
+                app:layout_constraintBottom_toTopOf="@+id/tvEkycSplashScreenLoading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEkycSplashScreenLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/kanit_regular"
+                android:text="@string/ekyc_splash_screen_loading_progress"
+                android:textColor="@color/colorDarkNiceBlue"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ekycSplashScreenLoading" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo_ktb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ekyc_splash_screen_logo_jade_dev_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
+
+

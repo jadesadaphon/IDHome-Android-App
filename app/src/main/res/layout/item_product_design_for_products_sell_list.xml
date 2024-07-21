@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxEms="18"
+            android:maxLines="1"
+            android:text="@string/tv_product_name_in_item_product_f"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_price_in_item_product_f"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name" />
+
+        <TextView
+            android:id="@+id/tv_product_price_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_price_month_in_item_product_f"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_price"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_price" />
+
+        <TextView
+            android:id="@+id/tv_product_price_pro_grand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_price_pro_grand_in_item_product_f"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_price_month"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_price_month" />
+
+        <TextView
+            android:id="@+id/tv_product_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_product_stock_in_item_product_f"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_price_pro_grand"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_price_pro_grand" />
+
+        <ImageView
+            android:id="@+id/btn_iv_remove"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_iv_add"
+            app:layout_constraintEnd_toStartOf="@+id/tv_pcroduct_amount"
+            app:layout_constraintTop_toTopOf="@+id/btn_iv_add"
+            app:srcCompat="@drawable/ic_remove_48" />
+
+        <ImageView
+            android:id="@+id/btn_iv_add"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_product_stock"
+            app:srcCompat="@drawable/ic_add_48" />
+
+        <TextView
+            android:id="@+id/tv_pcroduct_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/tv_product_amount"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_iv_add"
+            app:layout_constraintEnd_toStartOf="@+id/btn_iv_add"
+            app:layout_constraintTop_toTopOf="@+id/btn_iv_add" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

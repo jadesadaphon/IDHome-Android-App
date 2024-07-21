@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseGreenTextInputEditText.Input.Style" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">@dimen/space_08dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/space_08dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/space_08dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/space_08dp</item>
+        <item name="boxStrokeColor">@color/colorTransparent</item>
+        <item name="boxStrokeWidth">@dimen/space_00dp</item>
+        <item name="boxStrokeWidthFocused">@dimen/space_00dp</item>
+        <item name="colorControlActivated">@color/colorTransparent</item>
+        <item name="colorControlNormal">@color/colorTransparent</item>
+    </style>
+    <style name="BlueThemeBottomCardView.Standard.Top.Rounder" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="android:translationY">@dimen/space_10dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardCornerRadius">@dimen/space_10dp</item>
+        <item name="contentPaddingBottom">@dimen/space_08dp</item>
+    </style>
+    <style name="ThemeBlue.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/ekyc_text_change_blue_enable</item>
+        <item name="android:background">@drawable/bg_button_blue_gradian_selector</item>
+        <item name="android:paddingTop">@dimen/half_padding</item>
+        <item name="android:paddingBottom">@dimen/half_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:drawablePadding">@dimen/tiny_padding</item>
+        <item name="android:fontFamily">@font/kanit_medium</item>
+        <item name="android:paddingStart">@dimen/default_padding</item>
+        <item name="android:paddingEnd">@dimen/default_padding</item>
+    </style>
+    <style name="AppTheme.TextBold" parent="@style/Base.TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/kanit_medium</item>
+    </style>
+    <style name="TextView.Toolbar.Semi.Bold.Medium" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/colorBlack212121</item>
+        <item name="android:fontFamily">@font/kanit_semi_bold</item>
+    </style>
+    <style name="AppTheme.ProgressBar.DarkNiceBlue" parent="@style/AppTheme.ProgressBar">
+        <item name="colorAccent">@color/colorDarkNiceBlue</item>
+    </style>
+    <style name="AppTheme.ProgressBar" parent="@style/AppTheme.TransparentActionBar">
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.TransparentActionBar" parent="@style/AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:textAppearance">@style/AppTheme.TextAppearance</item>
+        <item name="android:buttonStyle">@style/KanitButtonStyle</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:editTextStyle">@style/KanitEditTextStyle</item>
+        <item name="android:textViewStyle">@style/KanitTextViewStyle</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="buttonStyle">@style/KanitButtonStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.ActionBar.Transparent" parent="@style/AppTheme.ActionBar">
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.TextAppearance" parent="@style/AppTheme">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/font_kanit</item>
+    </style>
+    <style name="KanitButtonStyle" parent="@android:style/Widget.Material.Button">
+        <item name="android:fontFamily">@font/font_kanit</item>
+    </style>
+    <style name="KanitEditTextStyle" parent="@android:style/Widget.Material.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:fontFamily">@font/font_kanit</item>
+    </style>
+    <style name="KanitTextViewStyle" parent="@android:style/Widget.Material.TextView">
+        <item name="android:fontFamily">@font/font_kanit</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:height">?attr/actionBarSize</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="android:contentInsetEnd">0dp</item>
+        <item name="android:contentInsetLeft">0dp</item>
+        <item name="android:contentInsetRight">0dp</item>
+        <item name="background">@color/colorPrimary</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+    </style>
+    <style name="AppTheme.ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/kanit_regular</item>
+    </style>
+</resources>

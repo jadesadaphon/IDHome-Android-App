@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CheckProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_product_code_in_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/kanit_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_product_name_in_item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_code_in_details"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_code_in_details" />
+
+        <ImageView
+            android:id="@+id/image_barcode"
+            android:layout_width="@dimen/width_barcode"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name_in_item_details" />
+
+        <TextView
+            android:id="@+id/text_barcode_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/kanit_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/colorBlack878787"
+            app:layout_constraintEnd_toEndOf="@+id/image_barcode"
+            app:layout_constraintStart_toStartOf="@+id/image_barcode"
+            app:layout_constraintTop_toBottomOf="@+id/image_barcode"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gi_warehouse_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_name_in_item_details"
+            app:layout_constraintTop_toBottomOf="@+id/text_barcode_number" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

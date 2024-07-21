@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_gi_warehouse_in_item_gi_warehouse_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_gi_warehouse_in_item_name_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gi_warehouse_in_item_gi_warehouse_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_gi_warehouse_in_item_location_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_gi_warehouse_in_item_gi_warehouse_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gi_warehouse_in_item_gi_warehouse_name" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_name_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_gi_warehouse_in_item_gi_warehouse_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gi_warehouse_in_item_gi_warehouse_location" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_location_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_gi_warehouse_in_item_gi_warehouse_location"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_name" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_bal_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_bal_qty_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_warehouse_in_item_warehouse_location"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_location" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_price1_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_warehouse_in_item_warehouse_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_bal_qty" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_price2_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_warehouse_in_item_warehouse_price1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_price1" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_price221"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_price221_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_warehouse_in_item_warehouse_price2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_price2" />
+
+        <TextView
+            android:id="@+id/tv_warehouse_in_item_warehouse_price222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_regular"
+            android:paddingStart="@dimen/space_06dp"
+            android:paddingEnd="@dimen/space_00dp"
+            android:text="@string/tv_warehouse_in_item_price222_f"
+            android:textColor="@color/colorBlack878787"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_warehouse_in_item_warehouse_price221"
+            app:layout_constraintTop_toBottomOf="@+id/tv_warehouse_in_item_warehouse_price221" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
