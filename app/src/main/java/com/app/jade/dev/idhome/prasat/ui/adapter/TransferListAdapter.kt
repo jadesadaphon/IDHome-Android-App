@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.jade.dev.idhome.prasat.R
 import com.app.jade.dev.idhome.prasat.data.datasource.Transfer
 import com.app.jade.dev.idhome.prasat.databinding.ItemTransferDesignForTransferListBinding
+import com.app.jade.dev.idhome.prasat.ui.TransferActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
-
 
 class TransferListAdapter(private var mContext: Context, private var transferList: List<Transfer>) : RecyclerView.Adapter<TransferListAdapter.TransferViewHolder>() {
     inner class TransferViewHolder( var view: ItemTransferDesignForTransferListBinding) : RecyclerView.ViewHolder(view.root)
@@ -40,6 +40,12 @@ class TransferListAdapter(private var mContext: Context, private var transferLis
         val dateTime = formatDateTime(transfer.sysCreate)
         val strDatetime = HtmlCompat.fromHtml(String.format(mContext.getString(R.string.tv_datetime_f),dateTime), HtmlCompat.FROM_HTML_MODE_COMPACT)
         view.tvDatetime.text = strDatetime
+
+        view.root.setOnClickListener {
+            if (mContext is TransferActivity) {
+                (mContext as TransferActivity).replaceFragment()
+            }
+        }
     }
 
     private fun formatDateTime(strDate: String): String {

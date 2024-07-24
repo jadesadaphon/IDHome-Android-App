@@ -1,7 +1,6 @@
 package com.app.jade.dev.idhome.prasat.ui.fragment
 
 import android.content.Context
-import android.nfc.Tag
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,13 +10,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.app.jade.dev.idhome.prasat.R
-import com.app.jade.dev.idhome.prasat.data.datasource.api.idhome.ProductSearchApi
 import com.app.jade.dev.idhome.prasat.data.datasource.api.idhome.TransferApi
 import com.app.jade.dev.idhome.prasat.data.model.TransferViewModel
-import com.app.jade.dev.idhome.prasat.databinding.FragmentCheckProductBinding
 import com.app.jade.dev.idhome.prasat.databinding.FragmentTransferListBinding
-import com.app.jade.dev.idhome.prasat.ui.adapter.ProductCheckAdapter
 import com.app.jade.dev.idhome.prasat.ui.adapter.TransferListAdapter
 import kotlinx.coroutines.launch
 

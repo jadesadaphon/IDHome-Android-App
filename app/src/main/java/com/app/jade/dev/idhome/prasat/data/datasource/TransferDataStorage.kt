@@ -29,8 +29,6 @@ class TransferDataStorage {
             transferList.add(transferListItem)
         }
 
-
-
         return@withContext transferList
     }
 }
