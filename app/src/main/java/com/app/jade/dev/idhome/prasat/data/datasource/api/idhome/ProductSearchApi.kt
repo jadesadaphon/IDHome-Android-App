@@ -21,7 +21,7 @@ class ProductSearchApi {
         return withContext(Dispatchers.IO) {
             try {
                 val client = OkHttpClient()
-                val url = "http://192.168.1.7/product?barcode=${code}"
+                val url = "http://192.168.1.12/product?barcode=${code}"
                 val request = Request.Builder()
                     .url(url)
                     .build()

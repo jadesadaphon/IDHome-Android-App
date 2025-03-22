@@ -16,6 +16,10 @@
 
 
     <string name="tv_product_code_in_fm_check_product_f"><![CDATA[<b>รหัสสินค้า : </b>%1$s]]></string>
+    <string name="tv_pr_docno_in_fm_check_product_f"><![CDATA[<b>PR : </b>%1$s]]></string>
+    <string name="tv_po_docno_in_fm_check_product_f"><![CDATA[<b>PO : </b>%1$s]]></string>
+    <string name="tv_po_remain_qty_in_fm_check_product_f"><![CDATA[<b>ค้างรับ : </b>%1$s %2$s]]></string>
+
     <string name="tv_product_name_in_fm_check_product_f"><![CDATA[<b>ชื่อสินค้า : </b>%1$s]]></string>
     <string name="tv_barcode_f"><![CDATA[<b>บาร์โค้ด : </b>%1$s]]></string>
     <string name="tv_gi_warehouse_in_item_name_f"><![CDATA[<b>คลังรับ : </b> %1$s]]></string>

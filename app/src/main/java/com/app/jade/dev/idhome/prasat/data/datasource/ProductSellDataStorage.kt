@@ -18,6 +18,24 @@ class ProductSellDataStorage {
         val warehouse = data.getJSONArray("warehouse")
         val amount = 1
 
+        var prDocNo = ""
+        var poDocNo = ""
+        var poRemainQty = 0
+        var poUnitCode = ""
+        val prpo = data.optJSONObject("prpo") // ใช้ optJSONObject เพื่อลดความเสี่ยง NullPointerException
+        if (prpo != null && prpo.length() != 0) {
+            val pr = prpo.optJSONObject("pr")
+            if (pr != null && pr.length() != 0) {
+                prDocNo = pr.optString("docno", "") // ใช้ optString เพื่อตั้งค่า default เมื่อ key ไม่มีหรือเป็น null
+            }
+            val po = prpo.optJSONObject("po")
+            if (po != null && po.length() != 0) {
+                poDocNo = po.optString("docno", "")
+                poRemainQty = po.optInt("remainqty", 0)
+                poUnitCode = po.optString("unitcode", "")
+            }
+        }
+
         val stockList = arrayListOf<Int>()
         for(i in 0 until warehouse.length()){
             val item = warehouse.getJSONObject(i)
@@ -33,14 +51,14 @@ class ProductSellDataStorage {
                     val beforeAmount = productSellList[i].amount
                     val updateAmount =  amount + beforeAmount
                     if (maximum >= updateAmount){
-                        productSellList[i] = ProductSell(barcode, productCode, productName, updateAmount, warehouse)
+                        productSellList[i] = ProductSell(barcode, productCode, productName, prDocNo, poDocNo,poRemainQty,poUnitCode, updateAmount, warehouse)
                         return@withContext productSellList
                     }
                     return@withContext productSellList
                 }
             }
         }
-        val item = ProductSell(barcode, productCode, productName, amount, warehouse)
+        val item = ProductSell(barcode, productCode, productName, prDocNo, poDocNo, poRemainQty, poUnitCode, amount, warehouse)
         productSellList.add(0,item)
         return@withContext productSellList
     }

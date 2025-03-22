@@ -17,6 +17,7 @@
             android:layout_margin="@dimen/space_16dp"
             android:enabled="true"
             android:text="@string/btn_sell_in_home_fragment"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

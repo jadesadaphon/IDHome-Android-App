@@ -17,7 +17,6 @@ import com.app.jade.dev.idhome.prasat.databinding.FragmentCheckProductBinding
 import com.app.jade.dev.idhome.prasat.ui.adapter.ProductCheckAdapter
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.oned.Code128Writer
-import com.journeyapps.barcodescanner.BarcodeEncoder
 
 
 class CheckProductFragment : Fragment() {
@@ -31,13 +30,33 @@ class CheckProductFragment : Fragment() {
             val barCode = it[0].barCode
             val productCode = it[0].productCode
             val productName = it[0].productName
+            val prDocNo = it[0].prDocNo
+            val poDocNo = it[0].poDocNo
+
+            val poRemainQty = when (it[0].poRemainQty) {
+                0 -> ""
+                else -> it[0].poRemainQty.toString()
+            }
+            val poUnitCode = it[0].poUnitCode
             val warehouse = it[0].warehouse
             displayBitmap(barCode)
+
             val strProductCode = HtmlCompat.fromHtml(String.format(this.getString(R.string.tv_product_code_in_fm_check_product_f),productCode), HtmlCompat.FROM_HTML_MODE_COMPACT)
             binding.tvProductCodeInDetails.text = strProductCode
 
             val strProductName = HtmlCompat.fromHtml(String.format(this.getString(R.string.tv_product_name_in_fm_check_product_f),productName), HtmlCompat.FROM_HTML_MODE_COMPACT)
             binding.tvProductNameInItemDetails.text = strProductName
+
+            val strPrDocNo = HtmlCompat.fromHtml(String.format(this.getString(R.string.tv_pr_docno_in_fm_check_product_f),prDocNo), HtmlCompat.FROM_HTML_MODE_COMPACT)
+            binding.tvProductPrInItemDetails.text = strPrDocNo
+
+            val strPoDocNo = HtmlCompat.fromHtml(String.format(this.getString(R.string.tv_po_docno_in_fm_check_product_f),poDocNo), HtmlCompat.FROM_HTML_MODE_COMPACT)
+            binding.tvProductPoInItemDetails.text = strPoDocNo
+
+            val strPoRemainQty = HtmlCompat.fromHtml(String.format(this.getString(R.string.tv_po_remain_qty_in_fm_check_product_f), poRemainQty , poUnitCode), HtmlCompat.FROM_HTML_MODE_COMPACT)
+            binding.tvPoRemainQtyInItemDetails.text = strPoRemainQty
+
+
 
             for(i in 0 until warehouse.length()){
                 val item = warehouse.getJSONObject(i)
