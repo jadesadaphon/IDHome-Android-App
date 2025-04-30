@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import androidx.core.text.HtmlCompat
+import com.app.jade.dev.idhome.prasat.AppConfig
 import com.app.jade.dev.idhome.prasat.BuildConfig
 import com.app.jade.dev.idhome.prasat.R
 import kotlinx.coroutines.Dispatchers
@@ -26,7 +27,7 @@ class TransferApi {
         return withContext(Dispatchers.IO) {
             try {
                 val client = OkHttpClient()
-                val host = BuildConfig.HOST_PYTHON_API
+                val host = AppConfig.API_PI
                 val url = "${host}transfer"
                 val request = Request.Builder()
                     .url(url)

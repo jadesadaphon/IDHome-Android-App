@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.jade.dev.idhome.prasat.R
 import com.app.jade.dev.idhome.prasat.data.datasource.Transfer
 import com.app.jade.dev.idhome.prasat.databinding.ItemTransferDesignForTransferListBinding
-import com.app.jade.dev.idhome.prasat.ui.TransferActivity
+import com.app.jade.dev.idhome.prasat.ui.activity.TransferActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

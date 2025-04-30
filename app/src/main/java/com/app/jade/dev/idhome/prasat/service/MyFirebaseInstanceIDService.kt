@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.app.jade.dev.idhome.prasat.R
-import com.app.jade.dev.idhome.prasat.ui.EkycActivity
+import com.app.jade.dev.idhome.prasat.ui.activity.EkycActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import java.text.SimpleDateFormat

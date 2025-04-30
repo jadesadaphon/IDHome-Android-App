@@ -3,7 +3,7 @@
     "project_number": "345246869625",
     "firebase_url": "https://id-home-f35a5-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "id-home-f35a5",
-    "storage_bucket": "id-home-f35a5.appspot.com"
+    "storage_bucket": "id-home-f35a5.firebasestorage.app"
   },
   "client": [
     {

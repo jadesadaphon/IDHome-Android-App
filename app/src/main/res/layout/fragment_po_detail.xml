@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.PoDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_po_document_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_kanit"
+            android:text="@string/tv_po_document_number" />
+
+        <TextView
+            android:id="@+id/tv_po_document_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_kanit"
+            android:text="@string/tv_po_document_date" />
+
+        <TextView
+            android:id="@+id/tv_po_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_kanit"
+            android:text="@string/tv_po_credit" />
+
+        <TextView
+            android:id="@+id/tv_po_delivery_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_kanit"
+            android:text="@string/tv_po_delivery_date" />
+
+        <TextView
+            android:id="@+id/tv_po_delivery_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_delivery_method" />
+
+        <TextView
+            android:id="@+id/tv_po_vendor_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_vendor_code" />
+
+        <TextView
+            android:id="@+id/tv_po_vendor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_vendor_name" />
+
+        <TextView
+            android:id="@+id/tv_po_created_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_created_by" />
+
+        <TextView
+            android:id="@+id/tv_po_total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_total_amount" />
+
+        <TextView
+            android:id="@+id/tv_po_discount_on_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_discount_on_invoice" />
+
+        <TextView
+            android:id="@+id/tv_po_discount_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_discount_amount" />
+
+        <TextView
+            android:id="@+id/tv_po_product_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_product_value" />
+
+        <TextView
+            android:id="@+id/tv_po_vat_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_vat_rate" />
+
+        <TextView
+            android:id="@+id/tv_po_vat_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_vat_amount" />
+
+        <TextView
+            android:id="@+id/tv_po_total_amount_with_vat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_total_amount_with_vat" />
+
+        <TextView
+            android:id="@+id/tv_po_exempt_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_exempt_value" />
+
+        <TextView
+            android:id="@+id/tv_po_grand_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_po_grand_total" />
+
+    </LinearLayout>
+
+</FrameLayout>

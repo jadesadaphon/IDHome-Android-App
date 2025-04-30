@@ -6,7 +6,6 @@ import android.media.MediaPlayer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.widget.Toast
 import androidx.core.text.HtmlCompat
 import com.app.jade.dev.idhome.prasat.R
 import kotlinx.coroutines.Dispatchers
@@ -54,9 +53,6 @@ class ProductSearchApi {
                 }
             } catch (e: Exception) {
                 Log.e("productSearch", "Error: ${e.message}")
-//                withContext(Dispatchers.Main) {
-//                    Toast.makeText(context, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
-//                }
                 return@withContext null
             }
         }

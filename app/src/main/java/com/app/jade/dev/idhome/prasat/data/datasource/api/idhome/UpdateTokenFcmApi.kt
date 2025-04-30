@@ -1,6 +1,7 @@
 package com.app.jade.dev.idhome.prasat.data.datasource.api.idhome
 
 import android.util.Log
+import com.app.jade.dev.idhome.prasat.AppConfig
 import com.app.jade.dev.idhome.prasat.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -20,7 +21,7 @@ class UpdateTokenFcmApi {
         return withContext(Dispatchers.IO) {
             try {
                 val client = OkHttpClient()
-                val host = BuildConfig.HOST_PYTHON_API
+                val host = AppConfig.API_PI
                 val url = "${host}newTokenFCM"
                 val formBody = FormBody.Builder()
                     .add("token", token)

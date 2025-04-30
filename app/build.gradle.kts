@@ -15,22 +15,15 @@ android {
         minSdk = 28
         targetSdk = 34
         versionCode = 2
-        versionName = "1.1"
+        versionName = "0.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        //load the values from .properties file
-        val keystoreFile = project.rootProject.file("hostip.properties")
+        val config = project.rootProject.file("config.properties")
         val properties = Properties()
-        properties.load(keystoreFile.inputStream())
-
-        //return empty key in case something goes wrong
-        val hostPythonIP = properties.getProperty("HOST_PYTHON_API") ?: ""
-        buildConfigField(type = "String" , name = "HOST_PYTHON_API" , value = hostPythonIP)
-
-        val hostNodeJsIP = properties.getProperty("HOST_NODEJS_API") ?: ""
-        buildConfigField(type = "String" , name = "HOST_NODEJS_API" , value = hostNodeJsIP)
-
+        properties.load(config.inputStream())
+        val mainHost = properties.getProperty("API_MAIN_BASE_URL") ?: ""
+        buildConfigField(type = "String" , name = "API_MAIN_BASE_URL" , value = mainHost)
     }
 
     buildFeatures {

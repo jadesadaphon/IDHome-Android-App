@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_background"
     android:fitsSystemWindows="true"
-    tools:context=".ui.TransferActivity">
+    tools:context=".ui.activity.TransferActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"

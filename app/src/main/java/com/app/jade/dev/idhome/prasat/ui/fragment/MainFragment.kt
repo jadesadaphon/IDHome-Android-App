@@ -1,16 +1,15 @@
 package com.app.jade.dev.idhome.prasat.ui.fragment
 
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.app.jade.dev.idhome.prasat.R
 import com.app.jade.dev.idhome.prasat.databinding.FragmentMainBinding
-import com.app.jade.dev.idhome.prasat.ui.ScanBarcodeActivity
-import com.app.jade.dev.idhome.prasat.ui.TransferActivity
+import com.app.jade.dev.idhome.prasat.ui.activity.PoManageActivity
+import com.app.jade.dev.idhome.prasat.ui.activity.ScanBarcodeActivity
+import com.app.jade.dev.idhome.prasat.ui.activity.TransferActivity
 
 class MainFragment : Fragment() {
 
@@ -45,6 +44,11 @@ class MainFragment : Fragment() {
 
         binding.btnTransfer.setOnClickListener {
             val intent = Intent(requireContext(), TransferActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnPoManage.setOnClickListener {
+            val intent = Intent(requireContext(), PoManageActivity::class.java)
             startActivity(intent)
         }
     }

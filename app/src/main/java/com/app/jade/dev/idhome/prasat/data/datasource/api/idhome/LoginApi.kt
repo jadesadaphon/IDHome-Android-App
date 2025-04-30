@@ -5,6 +5,7 @@ import android.content.Context
 import android.media.MediaPlayer
 import android.util.Log
 import androidx.core.text.HtmlCompat
+import com.app.jade.dev.idhome.prasat.AppConfig
 import com.app.jade.dev.idhome.prasat.BuildConfig
 import com.app.jade.dev.idhome.prasat.R
 import kotlinx.coroutines.Dispatchers
@@ -20,8 +21,10 @@ class LoginApi {
         return withContext(Dispatchers.IO) {
             try {
                 val client = OkHttpClient()
-                val host = BuildConfig.HOST_PYTHON_API
+                val host = AppConfig.API_PI
                 val url = "${host}login"
+
+                println(url)
 
                 val formBody = FormBody.Builder()
                     .add("code", code)

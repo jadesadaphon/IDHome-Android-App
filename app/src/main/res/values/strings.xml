@@ -78,4 +78,28 @@
     <string name="tv_datetime_f"><![CDATA[<b>วันที่ขอโอน : </b> %1$s]]></string>
 
 
+    <string name="btn_po_manage">อนุมัติใบสั่งซื้อสินค้า</string>
+    <string name="tv_po_document_number"><![CDATA[<b>เลขที่เอกสาร </b> %1$s]]></string>
+    <string name="tv_po_document_date"><![CDATA[<b>วันที่เอกสาร </b> %1$s]]></string>
+    <string name="tv_po_credit"><![CDATA[<b>เครดิต </b> %1$s]]></string>
+    <string name="tv_po_delivery_date"><![CDATA[<b>กำหนดส่งมอบ </b> %1$s]]></string>
+    <string name="tv_po_delivery_method"><![CDATA[<b>การส่งมอบ </b> %1$s]]></string>
+    <string name="tv_po_vendor_code"><![CDATA[<b>รหัสเจ้าหนี้ </b> %1$s]]></string>
+    <string name="tv_po_vendor_name"><![CDATA[<b>ชื่อเจ้าหนี้ </b> %1$s]]></string>
+    <string name="tv_po_created_by"><![CDATA[<b>ผู้ทำเอกสาร </b> %1$s]]></string>
+    <string name="tv_po_total_amount"><![CDATA[<b>รวมจำนวนเงิน </b> %1$s]]></string>
+    <string name="tv_po_discount_on_invoice"><![CDATA[<b>ส่วนลดท้ายบิล </b> %1$s]]></string>
+    <string name="tv_po_discount_amount"><![CDATA[<b>มูลค่าส่วนลดท้ายบิล </b> %1$s]]></string>
+    <string name="tv_po_product_value"><![CDATA[<b>มูลค่าสินค้า </b> %1$s]]></string>
+    <string name="tv_po_vat_rate"><![CDATA[<b>ภาษีมูลค่าเพิ่ม </b> %1$s]]></string>
+    <string name="tv_po_vat_amount"><![CDATA[<b>มูลค่าภาษีมูลค่าเพิ่ม </b> %1$s]]></string>
+    <string name="tv_po_total_amount_with_vat"><![CDATA[<b>มูลค่ารวมภาษี </b> %1$s]]></string>
+    <string name="tv_po_exempt_value"><![CDATA[<b>มูลค่ายกเว้น </b> %1$s]]></string>
+    <string name="tv_po_grand_total"><![CDATA[<b>รวมเงินทั้งสิ้น</b> %1$s บาท]]></string>
+    <string name="tv_po_currency"><![CDATA[<b>สกุลเงิน </b> %1$s]]></string>
+
+
+
+
+
 </resources>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_background"
     android:fitsSystemWindows="true"
-    tools:context=".ui.EkycActivity">
+    tools:context=".ui.activity.EkycActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/ekyc_splash_screen_activity_fragment_container_view"
